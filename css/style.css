@@ -234,6 +234,15 @@ body {
     align-items: center;
 }
 
+.songlist ul li:hover{
+
+    background-color: #464646;
+
+}
+
+
+
+
 .playnow {
 
     display: flex;
@@ -254,7 +263,7 @@ body {
 }
 
 .songlist {
-    height: 675px;
+    height: 650px;
     overflow-y: auto;
     margin: 20px 0;
 }
@@ -392,6 +401,11 @@ body {
         background-color: black;
     }
 
+    .songlist {
+        height: 600px;
+        
+    }
+    
 
     .right {
 
