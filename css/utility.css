@@ -1,0 +1,90 @@
+.border{
+    margin: 3px;
+    border: 2px solid red;
+}
+
+
+.flex{
+
+    display: flex;
+}
+
+.justify-center{
+
+    justify-content: center;
+}
+
+
+.align-items{
+
+    align-items: center;
+}
+
+
+.bg-black{
+    background-color: #000000;
+    color: white;
+}
+
+.invert{
+
+    filter: invert(1);
+}
+
+
+.bg-grey{
+
+    background-color: #0e0e0e;
+}
+
+.rounded{
+
+    border-radius: 7px;
+}
+
+.m-1{
+
+    margin: 3px;
+    
+}
+
+.p-1{
+
+    padding: 10px;
+}
+
+
+/* Set the default styles for the body and page background */
+body {
+    background-color: #121212; /* Dark background for dark mode */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Customize the scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 10px; /* Height of the scrollbar for horizontal scrolling */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 20px; /* Rounded edges for the handle */
+    border: 1px solid #333; /* Adds a border to the handle for better visibility */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color when hovered */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333; /* Track background color */
+    border-radius: 10px; /* Rounded edges for the track */
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #222; /* Darker track color */
+  }
+  
