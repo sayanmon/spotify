@@ -22,7 +22,7 @@ async function getSongs(folder) {
 
     currentfolder = folder;
 
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
     let response = await a.text();
 
 
@@ -105,7 +105,7 @@ const playMusic = (track, pause = false) => {
 
 async function displayalbums() {
 
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`http://127.0.0.1:3000/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -123,7 +123,7 @@ async function displayalbums() {
             let folder = e.href.split("/").slice(-2)[0]
             //get the meta data of the folder
 
-            let a = await fetch(`/songs/${folder}/info.json`)
+            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`)
             let response = await a.json();
 
 
@@ -160,12 +160,12 @@ async function main() {
 
 
 
-    await getSongs("songs/ncs/")
+    await getSongs("songs/sayan/")
     playMusic(songs[0], true)
 
     //display albums
 
-    displayalbums()
+    await displayalbums()
 
 
 
