@@ -159,7 +159,7 @@ body {
     gap: 15px;
     margin: 7px;
     flex-wrap: wrap;
-    max-height: 60vh;
+    max-height: 51vh;
     overflow-y: auto;
 }
 
@@ -402,8 +402,11 @@ body {
     }
 
     .songlist {
-        height: 600px;
+        height: 500px;
         
+    }
+    .spotify h1 {
+        margin: 0;
     }
     
 
